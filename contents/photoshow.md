@@ -1,5 +1,6 @@
 #### Selected Awards Show
-<img src="static/assets/img/award.jpg" alt="奖项备份">
+<img src="static/assets/img/award.jpg" style="width:40%; height:auto;" alt="奖项备份">
+
 
 
 #### Selected Life Show
