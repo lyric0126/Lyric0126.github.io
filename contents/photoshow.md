@@ -1,8 +1,8 @@
-#### Selected Awards Show
+#### Selected Awards Photo Show
 <img src="static/assets/img/award.jpg" style="max-width:800px; width:100%; height:auto;">
 
 
-#### Selected Life Show
+#### Selected Life Photo Show
 
 <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
   <img src="static/assets/img/lifeshow1.png" style="flex: 1 1 180px; max-width: 19%; width: 180px; height:auto;">
