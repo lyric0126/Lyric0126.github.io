@@ -11,10 +11,9 @@ I'm currently pursuing an MPhil degree in Artificial Intelligence of Things (AIo
 
 #### Other social media
 [[抖音]](https://v.douyin.com/pMJp7OYCM9k/)
-- <strong>微信号: </strong>\ Lyric0126 \
 [[哔哩哔哩]](https://b23.tv/iPn9WRK)
 [[小红书]](https://www.xiaohongshu.com/user/profile/6444f0950000000029011e8b?xsec_token=YBJHuCd0rXUy04kbNw43i8FTQqHB6Q6tnyvohIciFdMZ8%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=6444f0950000000029011e8b&apptime=1750838451&share_id=63dae38534634098b137d28af8ea3ab4&share_channel=copy_link)
-
+- <strong>微信号: </strong> Lyric0126 
 
 #### Education
 
