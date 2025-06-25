@@ -1,13 +1,19 @@
-- National Scholarship of Graduate Student, 2024.
+- 集成电路创新大赛RISC-V赛题广东省 二等奖, 2025.
 
-- First-prize Scholarship of CUMT, 2024.
+- EDA精英挑战赛国家 三等奖, 2024.
 
-- First-prize Scholarship of CUMT, 2023.
+- 第三届高校电气电子工程创新大赛全国赛 二等奖, 2024.
 
-- Freshman Scholarship of CUMT, 2022.
+- 第三届高校电气电子工程创新大赛广东省赛一等奖， 2024.
 
-- Excellent Graduation Project of Jiangsu Province, 2022.
+- 国家级大学生创新创业训练计划项目, 2024.
 
-- First-prize Enterprise Scholarship of CUMT, 2020.
+- 国家励志奖学金, 2023.
 
-- First-prize Scholarship of CUMT, 2019.
+- 第十七届“挑战杯”广东省赛区 特等奖, 2023.
+
+- 全国大学生数学竞赛（非数学类）二等奖, 2023.
+
+- 广东省大学生电子设计大赛（“AI专题”） 一等奖, 2022.
+
+- 全国大学生微创业大赛银奖, 2022.
