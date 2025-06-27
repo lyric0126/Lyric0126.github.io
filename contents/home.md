@@ -14,17 +14,17 @@ at the School of Information Hub, The Hong Kong University of Science and Techno
   <img src="https://img.icons8.com/color/48/000000/tiktok--v1.png" width="32"/>
 </a>
 <a href="https://b23.tv/iPn9WRK" target="_blank" title="哔哩哔哩" style="margin-left:8px;">
-  <img src="https://img.icons8.com/fluency/48/000000/bilibili.png" width="32"/>
+  <img src="static/assets/img/icons8-bilibili-50.pdf" width="32"/>
 </a>
 <a href="https://www.xiaohongshu.com/user/profile/6444f0950000000029011e8b" target="_blank" title="小红书" style="margin-left:8px;">
-  <img src="https://img.icons8.com/color/48/000000/little-red-book.png" width="32"/>
+  <img src="static/assets/img/xiaoshongshu.png" width="32"/>
 </a>
 <a href="static/assets/img/CV.pdf" target="_blank" title="点击查看我的CV" style="margin-left:10px;">
-  <img src="https://img.icons8.com/fluency/48/000000/cv.png" alt="CV" width="36" style="vertical-align:middle;">
+  <img src="static/assets/img/icons8-resume-50-2.pdf" alt="CV" width="36" style="vertical-align:middle;">
   <span style="margin-left:4px; font-size: 1em;">CV</span>
 </a>
-<a href="static/assets/jianli.pdf" target="_blank" title="点击查看我的简历" style="margin-left:10px;">
-  <img src="https://img.icons8.com/color/48/000000/resume-website.png" width="36" alt="简历" style="vertical-align:middle;">
+<a href="static/assets/img/jianli.pdf" target="_blank" title="点击查看我的简历" style="margin-left:10px;">
+  <img src="static/assets/img/icons8-resume-50.pdf" width="36" alt="简历" style="vertical-align:middle;">
   <span style="margin-left:4px; font-size: 1em;">简历</span>
 </a>
 
