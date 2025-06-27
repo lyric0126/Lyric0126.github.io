@@ -1,15 +1,21 @@
+<!-- 添加头像在右侧浮动显示 -->
+<table align="right">
+<tr>
+  <td style="vertical-align: middle;">
+    <img src="static/assets/img/photo.png" width="180" style="border-radius: 8px;">
+  </td>
+</tr>
+</table>
 [![lyric0126](https://img.shields.io/badge/lyric0126-github-blue?logo=github)](https://github.com/lyric0126)
 
-I'm currently pursuing an MPhil degree in Artificial Intelligence of Things (AIoT)  
-at the School of Information Hub, The Hong Kong University of Science and Technology (Guangzhou).
+I'm currently pursuing an MPhil degree in Artificial 
+Intelligence of Things (AIoT) at the School of Information Hub, 
+The Hong Kong University of Science and Technology (Guangzhou).
 
 喜欢做有趣的，有价值的事情，爱好是健身和打篮球
 
-#### Email
+#### Social media
 1938133359@qq.com
-
-#### Other social media
-
 <a href="https://v.douyin.com/pMJp7OYCM9k/" target="_blank" title="抖音">
   <img src="https://img.icons8.com/color/48/000000/tiktok--v1.png" width="32"/>
 </a>

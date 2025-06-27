@@ -112,41 +112,9 @@ section .main-body{
 
 /* 控制每个模块 section 的内外边距 */
 section {
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
-}
-
-/* 控制 header 与正文之间间距 */
-section header {
-    margin-bottom: 0.5rem;
-}
-
-/* 控制 h2 的行高和间距，避免太撑空间 */
-section header h2 {
-    line-height: 2.4rem !important;
-    margin-bottom: 0.3rem !important;
-    font-size: 1.8rem !important;
-}
-
-/* 控制 .main-body 渲染后的段落间距 */
-section .main-body > * {
-    margin-top: 0.4rem;
-    margin-bottom: 0.4rem;
-}
-
-/* 控制 markdown 渲染的段落、标题、列表等 */
-section .main-body p,
-section .main-body h3,
-section .main-body ul,
-section .main-body ol {
-    margin-top: 0.4rem;
-    margin-bottom: 0.4rem;
-}
-
-/* 可选：限制最大宽度，避免左右太空旷 */
-.container.px-5 {
-    max-width: 1000px;
 }
 
