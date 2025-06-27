@@ -8,3 +8,5 @@
 - 全国大学生数学竞赛（非数学类）<strong>二等奖</strong> <strong>2023</strong> 
 - 广东省大学生电子设计大赛（“AI专题”）<strong>一等奖</strong> <strong>2022</strong> 
 - 全国大学生微创业大赛<strong>银奖</strong> <strong>2022</strong> 
+
+---
