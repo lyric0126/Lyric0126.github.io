@@ -1,10 +1,27 @@
-- 集成电路创新大赛RISC-V赛题广东<strong>省二等奖 </strong> <strong>2025</strong> 
-- EDA精英挑战赛<strong>国家三等奖</strong> <strong>2024</strong> 
-- 第三届高校电气电子工程创新大赛<strong>全国赛二等奖</strong> <strong>2024</strong> 
-- 第三届高校电气电子工程创新大赛<strong>广东省赛一等奖</strong> <strong>2024</strong> 
-- <strong>国家级</strong> 大学生创新创业训练计划项目 <strong>2024</strong> 
-- 国家励志奖学金 <strong>2023</strong> 
-- 第十七届“挑战杯”广东<strong>省赛区特等奖</strong> <strong>2023</strong> 
-- 全国大学生数学竞赛（非数学类）<strong>二等奖</strong> <strong>2023</strong> 
-- 广东省大学生电子设计大赛（“AI专题”）<strong>一等奖</strong> <strong>2022</strong> 
-- 全国大学生微创业大赛<strong>银奖</strong> <strong>2022</strong> 
+<h3>工作/研究经历</h3>
+
+<div style="display:flex; align-items:center; margin-bottom:24px;">
+  <img src="static/assets/img/joulwatt.png" style="width:100px; margin-right:24px;">
+  <div>
+    <b>杰华特微电子有限公司</b><br>
+    研发部数字后端实习生<br>
+    (2024.2 - 2024.7)
+  </div>
+</div>
+
+<div style="display:flex; align-items:center; margin-bottom:24px;">
+  <img src="static/assets/img/hkustgzlogo.jpg" style="width:100px; margin-right:24px;">
+  <div>
+    <b>香港科技大学（广州）</b><br>
+    研究助理，导师：<a href="https://www.chenhuangxun.com/">陈煌栒教授</a> 指导<br>
+    (2025.6 - 2025.8)
+  </div>
+</div>
+
+<div style="display:flex; align-items:center; margin-bottom:24px;">
+  <img src="static/assets/img/PLCTlab.png" style="width:100px; margin-right:24px;">
+  <div>
+    <a href="https://www.chenhuangxun.com/">中国科学院软件研究所（PLCT LAB）</a><br>
+    online intern<br>
+  </div>
+</div>
