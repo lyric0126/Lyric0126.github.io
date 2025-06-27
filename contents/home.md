@@ -15,7 +15,7 @@ at the School of Information Hub, The Hong Kong University of Science and Techno
 </a>
 <!-- 本地 bilibili 图标 -->
 <a href="https://b23.tv/iPn9WRK" target="_blank" title="哔哩哔哩" style="margin-left:8px;">
-  <img src="static/assets/img/icons8-bilibili.png" width="32"/>
+  <img src="static/assets/img/icons8-bilibili-50.png" width="32"/>
 </a>
 
 <!-- 本地小红书图标 -->
