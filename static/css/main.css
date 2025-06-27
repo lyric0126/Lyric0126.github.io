@@ -1,8 +1,7 @@
 @import "./styles.css";
 
-
-:root{
-    --h-title-color:#3948d2;
+:root {
+    --h-title-color: #3948d2;
 }
 
 .header {
@@ -14,12 +13,14 @@
     background-color: var(--h-title-color);
 }
 
+/* ✅ 合并并修复背景图样式 */
 .top-section {
     position: relative;
-    padding: 10rem 0;
-    background-position: center;
+    padding: 8rem 0; /* 控制上下空间，可适度调大 */
+    background-position: center center;
     background-size: cover;
-    height: 25rem;
+    background-repeat: no-repeat;
+    min-height: 300px; /* ✅ 推荐替代 height，让内容撑开背景 */
 }
 
 .top-section h2 {
@@ -41,19 +42,18 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-section header h2{
+section header h2 {
     font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
     color: var(--h-title-color);
     font-size: 2.3rem;
     line-height: 4rem;
 }
 
-section .main-body{
+section .main-body {
     font-size: 1.3rem;
     font-weight: 200;
     line-height: 2.4rem;
 }
-
 
 .bg-gradient-primary-to-secondary-light {
     background: linear-gradient(45deg, #fcfcfc, #ffffff) !important;
@@ -62,8 +62,6 @@ section .main-body{
 .bg-gradient-primary-to-secondary-gray {
     background: linear-gradient(45deg, #f0f0f0, #f1f1f1) !important;
 }
-
-
 
 .on-top {
     position: relative;
@@ -87,7 +85,7 @@ section .main-body{
     background: rgba(0, 0, 0, 0.4);
 }
 
-
+/* ✅ 头像样式 */
 #avatar {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -101,7 +99,6 @@ section .main-body{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-
 @media screen and (max-width: 991px) {
     #avatar {
         margin: 0;
@@ -109,12 +106,9 @@ section .main-body{
 }
 
 /* ===================== 优化模块间距和排版 ===================== */
-
-/* 控制每个模块 section 的内外边距 */
 section {
     margin-top: 2rem !important;
     margin-bottom: 2rem !important;
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
 }
-
