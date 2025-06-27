@@ -1,4 +1,3 @@
-## 工作 / 研究经历
 
 <div style="display:flex; align-items:center; margin-bottom:24px;">
   <img src="static/assets/img/joulwatt.png" style="width:80px; margin-right:20px; border-radius:6px;">
@@ -8,7 +7,6 @@
     时间：2024.2 - 2024.7
   </div>
 </div>
-
 <div style="display:flex; align-items:center; margin-bottom:24px;">
   <img src="static/assets/img/hkustgzlogo.jpg" style="width:80px; margin-right:20px; border-radius:6px;">
   <div style="line-height:1.4;">
@@ -18,7 +16,6 @@
    时间：<strong>2025.6 - 2025.8</strong> 
   </div>
 </div>
-
 <div style="display:flex; align-items:center; margin-bottom:24px;">
   <img src="static/assets/img/PLCTlab.png" style="width:80px; margin-right:20px; border-radius:6px;">
   <div style="line-height:1.4;">
@@ -27,3 +24,5 @@
     时间：<strong>2025（远程）</strong> 
   </div>
 </div>
+
+<hr style="margin: 12px 0;">
