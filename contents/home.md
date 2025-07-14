@@ -54,6 +54,5 @@ The Hong Kong University of Science and Technology (Guangzhou).
 
 
 #### Research Interests
-人工智能与物联网，具身智能，嵌入式人工智能，深度学习的硬件加速，稀疏矩阵优化
-
+人工智能与物联网，稀疏矩阵优化，嵌入式人工智能，具身智能，深度学习的硬件加速，
 ---
