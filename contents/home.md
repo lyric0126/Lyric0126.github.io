@@ -13,9 +13,6 @@ I'm currently pursuing an MPhil degree in Artificial
 Intelligence of Things (AIoT) at the School of Information Hub, 
 The Hong Kong University of Science and Technology (Guangzhou).
 
-喜欢做有趣的，有价值的事情，爱好是健身和打篮球
-
-
 #### Social media
 1938133359@qq.com
 <a href="https://v.douyin.com/pMJp7OYCM9k/" target="_blank" title="抖音">
@@ -47,12 +44,10 @@ The Hong Kong University of Science and Technology (Guangzhou).
 ---
 
 #### Education
-
-<strong>2020-2024</strong> 华南理工大学（project 985）电子信息学院 信息工程专业 <strong>学士</strong>  
-<strong>2024-2025</strong> 华南理工大学（project 985）集成电路学院 集成电路工程专业 <strong>硕士</strong>  
-<strong>2025-2027</strong> 香港科技大学（广州）信息枢纽 人工智能与物联网专业 <strong>硕士</strong>
-
+<strong>2020-2024</strong> School of Electronic and Information Engineering, South China University of Technology (Project 985), Bachelor of Engineering in Information Engineering
+<strong>2024-2025</strong> School of Integrated Circuit Science and Engineering, South China University of Technology (Project 985), Master of Engineering in Integrated Circuit Engineering
+<strong>2025-2027</strong> Information Hub, The Hong Kong University of Science and Technology (Guangzhou), Master of Philosophy in Artificial Intelligence
 
 #### Research Interests
-人工智能与物联网，稀疏矩阵优化，嵌入式人工智能，具身智能，深度学习的硬件加速，
+Artificial Intelligence, High-Performance Computing (HPC), Edge Artificial Intelligence, Quantization of Large Language Models (LLMs)
 ---
