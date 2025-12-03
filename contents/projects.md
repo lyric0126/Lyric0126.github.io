@@ -54,7 +54,7 @@
 ---
 
 <div style="display: flex; align-items: center; gap: 24px; margin-bottom: 2rem;">
-  <img src="static/assets/img/ai_nasalswab_robot.png" alt="nasal swab robot" style="width: 360px; height: auto; border-radius: 6px;">
+  <img src="static/assets/img/project1.png" alt="nasal swab robot" style="width: 360px; height: auto; border-radius: 6px;">
   <div style="line-height: 1.6;">
     <h4 style="margin: 0;">基于CNN与ROS的智能核酸采样机器人</h4>
     <p><strong>作者：</strong>刘少坤（图像识别与AI算法模块负责人）<br>
