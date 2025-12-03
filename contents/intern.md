@@ -4,7 +4,7 @@
     <strong>小鹏汇天-自动驾驶中心-高性能计算组</strong><br>
    <strong>职位：</strong> 感知算法实习生<br>
     导师：<a href="https://www.linkedin.com/in/zurazhao/?originalSubdomain=cn">赵子瑞</a><br>
-   时间：<strong>2025.6 - 2025.8</strong> 
+   时间：<strong>2025.8 - 2025.11</strong> 
   </div>
 </div>
 <div style="display:flex; align-items:center; margin-bottom:24px;">
