@@ -1,4 +1,29 @@
 ## 项目
+---
+<div style="display: flex; align-items: center; gap: 24px; margin-bottom: 2rem;">
+  <img src="static/assets/img/raft.png" alt="raftstereo_quant" style="width: 360px; height: auto; border-radius: 6px;">
+  <div style="line-height: 1.6;">
+    <h4 style="margin: 0;">RAFT-Stereo 模型的 QAT/PTQ 量化、张量RT部署与 Orin 性能瓶颈优化</h4>
+    <p><strong>作者：</strong>刘少坤（HPC && AI Infer INTERN）<br>
+    <strong>性质：</strong>模型加速 · 边缘端推理优化项目<br>
+    <strong>工具：</strong>PyTorch、TensorRT、CUDA、Nsight Systems、QAT/PTQ、TensorRT Pluging<br>
+    <strong>简介：</strong>负责<strong>RAFT-Stereo 端侧量化、推理加速与 Orin 上的性能重构</strong>。基于 <strong>QAT + PTQ 混合量化策略</strong>，构建 <strong>特征提取网络的对称量化</strong>、<strong>GRU recurrent block 的非均匀量化
+    <br><br>
+    使用 <strong>Nsight Systems / Nsight Compute</strong> 对推理过程进行热点定位，发现计算瓶颈主要集中于：  
+    • <strong>Cost Volume 构建中的 3D Gather / Correlation</strong>  
+    • <strong>GRU 门控循环的序列依赖</strong>  
+    • <strong>双线性采样（grid_sample）算子的大量 global memory 访问</strong>  
+    • <strong>部分卷积层的 kernel launch overheading</strong>  
+    <br><br>
+    针对这些瓶颈，设计并实现多项优化：  
+    • <strong>GRU kernel 融合（gate fusion）</strong>，将多个 matmul+activation 合并为单 kernel，减少 launch 次数  
+    • <strong>量化后卷积层的 TensorRT 层融合</strong>（Conv + BN + ReLU）  
+    • <strong>重排特征图 layout</strong>，减少冗余 global memory 访问  
+    • <strong>基于cuda graph策略</strong>，提升量化算子吞吐  
+    </p>
+  </div>
+</div>
+
 
 ---
 
