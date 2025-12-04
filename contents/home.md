@@ -45,9 +45,9 @@ The Hong Kong University of Science and Technology (Guangzhou).
 
 #### Education
 <strong>2020-2024</strong> School of Electronic and Information Engineering, South China University of Technology (Project 985), Bachelor of Engineering in Information Engineering</strong>  
-<strong>2024-2025</strong> School of Integrated Circuit Science and Engineering, South China University of Technology (Project 985), Master of Engineering in Integrated Circuit Engineering</strong>  
+<strong>2024-2025</strong> School of Integrated Circuit Science and Engineering, South China University of Technology (Project 985), Master of Engineering in Electronic Information Engineering</strong>  
 <strong>2025-2027</strong> Information Hub, The Hong Kong University of Science and Technology (Guangzhou), Master of Philosophy in Artificial Intelligence</strong>  
 
 #### Research Interests
-Artificial Intelligence, High-Performance Computing (HPC), Edge Artificial Intelligence, Quantization of Large Language Models (LLMs)
+Artificial Intelligence, High-Performance Computing (HPC), Edge Artificial Intelligence, AI Infrastructure
 ---
