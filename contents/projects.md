@@ -26,6 +26,39 @@
 
 
 ---
+<div style="display: flex; align-items: center; gap: 24px; margin-bottom: 2rem;">
+  <img src="static/assets/img/robot.png" alt="pipeline" style="width: 360px; height: auto; border-radius: 6px;">
+  <div style="line-height: 1.6;">
+    <h4 style="margin: 0;">面向人形机器人的视频驱动动作学习系统架构与工程化实现</h4>
+    <p>
+      <strong>作者：</strong>刘少坤（核心系统设计与实现）<br>
+      <strong>性质：</strong>具身智能 / 机器人学习系统工程项目<br>
+      <strong>工具：</strong>PyTorch，Python，SMPL-X，GVHMR，GMR，Isaac Lab，Unitree G1<br>
+      <strong>简介：</strong>
+      从<strong>系统架构与工程基础设施</strong>角度出发，设计并实现了一套<strong>高度模块化、可扩展的人形机器人动作学习流水线</strong>。
+      系统采用<strong>分阶段解耦架构</strong>，将整体流程拆分为<strong>视频人体动作恢复、跨形态动作重定向、机器人控制数据生成与策略训练</strong>四个独立模块，
+      各模块通过统一的数据接口与中间表示进行连接，支持<strong>算法替换、参数扩展与规模化实验</strong>。
+      本人主导完成<strong>整体系统架构设计、模块接口定义、数据格式规范化以及关键组件的工程集成</strong>，
+      并针对长序列动作处理中的稳定性与一致性问题进行专项优化，
+      确保流水线在复杂输入条件下具备<strong>可复现、可维护、可扩展</strong>的工程特性。
+    </p>
+  </div>
+</div>
+---
+<div style="display: flex; align-items: center; gap: 24px; margin-bottom: 2rem;">
+  <img src="static/assets/img/output.gif" alt="motion-demo" style="width: 360px; height: auto; border-radius: 6px;">
+  <div style="line-height: 1.6;">
+    <p>
+      <strong>系统验证与工程效果：</strong>
+      在统一系统架构下，完成从<strong>单目视频输入</strong>到<strong>机器人全身控制策略输出</strong>的端到端运行验证。
+      系统能够稳定处理多段连续人体动作，并自动生成符合机器人运动学与约束条件的关节级时序数据，
+      下游策略训练模块可直接复用该数据进行大规模训练。
+      实验结果表明，该架构在<strong>低成本数据获取、人形机器人技能快速构建</strong>等工程场景中具备较高实用价值，
+      同时为后续接入更多感知模态或真实机器人部署提供了良好的系统基础。
+    </p>
+  </div>
+</div>
+
 
 <div style="display: flex; align-items: center; gap: 24px; margin-bottom: 2rem;">
   <img src="static/assets/img/biyesheji.png" alt="biyesheji" style="width: 360px; height: auto; border-radius: 6px;">

@@ -1,4 +1,14 @@
 <div style="display:flex; align-items:center; margin-bottom:24px;">
+  <img src="static/assets/img/sxf.png" style="width:80px; margin-right:20px; border-radius:6px;">
+  <div style="line-height:1.4;">
+    <strong>深信服科技 · 天问 AI 部门</strong><br>
+    <strong>职位：</strong>大模型算法实习生<br>
+    导师：向颖飞<br>
+    时间：<strong>2025.12 - 至今</strong>
+  </div>
+</div>
+
+<div style="display:flex; align-items:center; margin-bottom:24px;">
   <img src="static/assets/img/xiaopeng.png" style="width:80px; margin-right:20px; border-radius:6px;">
   <div style="line-height:1.4;">
     <strong>小鹏汇天-自动驾驶中心-高性能计算组</strong><br>
