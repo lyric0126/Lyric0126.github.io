@@ -10,7 +10,7 @@
 [![lyric0126](https://img.shields.io/badge/lyric0126-github-blue?logo=github)](https://github.com/lyric0126)
 
 I'm currently pursuing an MPhil degree in Artificial 
-Intelligence of Things (AIoT) at the School of Information Hub, 
+Intelligence (AI) at the School of Information Hub, 
 The Hong Kong University of Science and Technology (Guangzhou).
 
 #### Social media

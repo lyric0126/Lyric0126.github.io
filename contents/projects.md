@@ -51,7 +51,6 @@
 </div>
 
 ---
-
 <div style="display: flex; align-items: center; gap: 24px; margin-bottom: 2rem;">
   <img src="static/assets/img/biyesheji.png" alt="biyesheji" style="width: 360px; height: auto; border-radius: 6px;">
   <div style="line-height: 1.6;">
