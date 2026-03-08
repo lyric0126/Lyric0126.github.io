@@ -1,28 +1,56 @@
 ## 项目
 ---
+<!-- 项目 1+2：终端大模型量化压缩与 vLLM 推理优化 -->
 <div style="display: flex; align-items: center; gap: 24px; margin-bottom: 2rem;">
-  <img src="static/assets/img/raft.png" alt="raftstereo_quant" style="width: 360px; height: auto; border-radius: 6px;">
+  <img src="static/assets/img/qwen_terminal_llm.png" alt="qwen_terminal_llm_optimization" style="width: 360px; height: auto; border-radius: 6px;">
   <div style="line-height: 1.6;">
-    <h4 style="margin: 0;">RAFT-Stereo 模型的 QAT/PTQ 量化、张量RT部署与 Orin 性能瓶颈优化</h4>
-    <p><strong>作者：</strong>刘少坤（HPC && AI Infer INTERN）<br>
-    <strong>性质：</strong>模型加速 · 边缘端推理优化项目<br>
-    <strong>工具：</strong>PyTorch、TensorRT、CUDA、Nsight Systems、QAT/PTQ、TensorRT Pluging<br>
-    <strong>简介：</strong>负责<strong>RAFT-Stereo 端侧量化、推理加速与 Orin 上的性能重构</strong>。基于 <strong>QAT + PTQ 混合量化策略</strong>，构建 <strong>特征提取网络的对称量化</strong>、<strong>GRU recurrent block 的非均匀量化
-    <br><br>
-    使用 <strong>Nsight Systems / Nsight Compute</strong> 对推理过程进行热点定位，发现计算瓶颈主要集中于：  
-    • <strong>Cost Volume 构建中的 3D Gather / Correlation</strong>  
-    • <strong>GRU 门控循环的序列依赖</strong>  
-    • <strong>双线性采样（grid_sample）算子的大量 global memory 访问</strong>  
-    • <strong>部分卷积层的 kernel launch overheading</strong>  
-    <br><br>
-    针对这些瓶颈，设计并实现多项优化：  
-    • <strong>GRU kernel 融合（gate fusion）</strong>，将多个 matmul+activation 合并为单 kernel，减少 launch 次数  
-    • <strong>量化后卷积层的 TensorRT 层融合</strong>（Conv + BN + ReLU）  
-    • <strong>重排特征图 layout</strong>，减少冗余 global memory 访问  
-    • <strong>基于cuda graph策略</strong>，提升量化算子吞吐  
+    <h4 style="margin: 0;">Qwen3-30B MoE 端侧量化压缩与 vLLM 推理优化</h4>
+    <p><strong>作者：</strong>刘少坤（HPC &amp;&amp; AI Infer INTERN）<br>
+    <strong>性质：</strong>大模型量化压缩 · 端侧部署与推理优化项目<br>
+    <strong>工具：</strong>PyTorch、AutoRound、AWQ、FP8、vLLM、FlashInfer、CUDA Graph、异步调度、RTX 4090 / 5090<br>
+    <strong>简介：</strong>主导 <strong>Qwen3-30B MoE 在终端侧的量化压缩与部署优化</strong>，针对业务长尾输入场景（峰值 <strong>7k+ token</strong>）重构校准数据分布，解决传统校准集对长上下文与异常样本覆盖不足的问题。结合 <strong>AutoRound / AWQ / FP8</strong> 等多种策略，对不同模块采用差异化精度配置，重点缓解激活分布偏移、长尾 token 放大效应和量化后输出漂移，最终解决模型上线前的 <strong>精度坍塌</strong> 问题，确保模型顺利落地。<br><br>
+    在推理部署侧，完成 <strong>Qwen3-30B W4A16 在单卡 RTX 4090 环境下的部署与性能优化</strong>，集成 <strong>FlashInfer、CUDA Graph 与异步调度机制</strong>，优化 prefill / decode 阶段执行效率，相较 8B 基线实现 <strong>吞吐提升 40%</strong>。同时针对 <strong>30B 模型 FP4 量化后的精度退化问题</strong>，在 RTX 5090 环境下系统验证 <strong>EP / DP / PP</strong> 等并行策略组合，筛选最优方案后迁移至量产 4090 环境，支撑实际业务部署。
     </p>
   </div>
 </div>
+---
+<!-- 项目 3+4：量化模型算子融合与 Ascend NPU 推理框架优化 -->
+<div style="display: flex; align-items: center; gap: 24px; margin-bottom: 2rem;">
+  <img src="static/assets/img/infer_kernel_ascend.png" alt="infer_kernel_ascend_optimization" style="width: 360px; height: auto; border-radius: 6px;">
+  <div style="line-height: 1.6;">
+    <h4 style="margin: 0;">量化模型算子融合与 Ascend NPU 推理框架优化</h4>
+    <p><strong>作者：</strong>刘少坤（HPC &amp;&amp; AI Infer INTERN）<br>
+    <strong>性质：</strong>推理内核融合 · NPU 框架适配与性能优化项目<br>
+    <strong>工具：</strong>CUDA、Nsight Systems、Nsight Compute、NVFP4、FP8 KV Cache、vLLM、Ascend NPU、npu_gelu、自定义模块加载、插件机制<br>
+    <strong>简介：</strong>基于 <strong>Nsight Systems / Nsight Compute</strong> 对量化模型推理链路进行热点定位与瓶颈分析，围绕 <strong>MoE 路由、KV Cache 处理及量化内核调度</strong> 等关键路径展开优化。针对 GPU 推理场景，完成 <strong>NVFP4 内核的泛化适配</strong>，实现 <strong>SiLU + Mul</strong> 融合以减少中间张量读写；并在 MLA 架构下实现 <strong>FP8 KV Cache 的 Cat + Quant 原子融合</strong>，降低访存与 kernel launch 开销，最终实现 <strong>推理延迟下降 2%</strong>、<strong>吞吐提升 4%</strong>。<br><br>
+    同时面向天文特征匹配场景，基于 <strong>vLLM</strong> 定制适配 <strong>TWen-GPT2</strong> 的 Ascend NPU 推理框架，将 <strong>NewGELU / FastGELU</strong> 替换为 Ascend 原生 <strong>npu_gelu</strong> 算子以提升执行效率，并输出最后一层 <strong>hidden state</strong> 作为 embedding 用于特征检索与匹配。进一步通过 <strong>自定义模块加载机制与插件化补丁方案</strong>，实现多进程环境下的稳定集成与加载，整体推理性能较 <strong>Triton Server 提升约 70%</strong>。
+    </p>
+  </div>
+</div>
+---
+  <div style="display: flex; align-items: center; gap: 24px; margin-bottom: 2rem;">
+    <img src="static/assets/img/raft.png" alt="raftstereo_quant" style="width: 360px; height: auto; border-radius: 6px;">
+    <div style="line-height: 1.6;">
+      <h4 style="margin: 0;">RAFT-Stereo 模型的 QAT/PTQ 量化、张量RT部署与 Orin 性能瓶颈优化</h4>
+      <p><strong>作者：</strong>刘少坤（HPC && AI Infer INTERN）<br>
+      <strong>性质：</strong>模型加速 · 边缘端推理优化项目<br>
+      <strong>工具：</strong>PyTorch、TensorRT、CUDA、Nsight Systems、QAT/PTQ、TensorRT Pluging<br>
+      <strong>简介：</strong>负责<strong>RAFT-Stereo 端侧量化、推理加速与 Orin 上的性能重构</strong>。基于 <strong>QAT + PTQ 混合量化策略</strong>，构建 <strong>特征提取网络的对称量化</strong>、<strong>GRU recurrent block 的非均匀量化
+      <br><br>
+      使用 <strong>Nsight Systems / Nsight Compute</strong> 对推理过程进行热点定位，发现计算瓶颈主要集中于：  
+      • <strong>Cost Volume 构建中的 3D Gather / Correlation</strong>  
+      • <strong>GRU 门控循环的序列依赖</strong>  
+      • <strong>双线性采样（grid_sample）算子的大量 global memory 访问</strong>  
+      • <strong>部分卷积层的 kernel launch overheading</strong>  
+      <br><br>
+      针对这些瓶颈，设计并实现多项优化：  
+      • <strong>GRU kernel 融合（gate fusion）</strong>，将多个 matmul+activation 合并为单 kernel，减少 launch 次数  
+      • <strong>量化后卷积层的 TensorRT 层融合</strong>（Conv + BN + ReLU）  
+      • <strong>重排特征图 layout</strong>，减少冗余 global memory 访问  
+      • <strong>基于cuda graph策略</strong>，提升量化算子吞吐  
+      </p>
+    </div>
+  </div>
 
 ---
 <div style="display: flex; align-items: flex-start; gap: 24px; margin-bottom: 2rem;">
