@@ -13,16 +13,16 @@
   </div>
 </div>
 ---
-<!-- 项目 3+4：量化模型算子融合与 Ascend NPU 推理框架优化 -->
+<!-- 项目：量化模型算子融合与 Ascend NPU 推理框架优化 -->
 <div style="display: flex; align-items: center; gap: 24px; margin-bottom: 2rem;">
   <img src="static/assets/img/infer_kernel_ascend.png" alt="infer_kernel_ascend_optimization" style="width: 360px; height: auto; border-radius: 6px;">
   <div style="line-height: 1.6;">
     <h4 style="margin: 0;">量化模型算子融合与 Ascend NPU 推理框架优化</h4>
-    <p><strong>作者：</strong>刘少坤（HPC &amp;&amp; AI Infer INTERN）<br>
-    <strong>性质：</strong>推理内核融合 · NPU 框架适配与性能优化项目<br>
-    <strong>工具：</strong>CUDA、Nsight Systems、Nsight Compute、NVFP4、FP8 KV Cache、vLLM、Ascend NPU、npu_gelu、自定义模块加载、插件机制<br>
-    <strong>简介：</strong>基于 <strong>Nsight Systems / Nsight Compute</strong> 对量化模型推理链路进行热点定位与瓶颈分析，围绕 <strong>MoE 路由、KV Cache 处理及量化内核调度</strong> 等关键路径展开优化。针对 GPU 推理场景，完成 <strong>NVFP4 内核的泛化适配</strong>，实现 <strong>SiLU + Mul</strong> 融合以减少中间张量读写；并在 MLA 架构下实现 <strong>FP8 KV Cache 的 Cat + Quant 原子融合</strong>，降低访存与 kernel launch 开销，最终实现 <strong>推理延迟下降 2%</strong>、<strong>吞吐提升 4%</strong>。<br><br>
-    同时面向天文特征匹配场景，基于 <strong>vLLM</strong> 定制适配 <strong>TWen-GPT2</strong> 的 Ascend NPU 推理框架，将 <strong>NewGELU / FastGELU</strong> 替换为 Ascend 原生 <strong>npu_gelu</strong> 算子以提升执行效率，并输出最后一层 <strong>hidden state</strong> 作为 embedding 用于特征检索与匹配。进一步通过 <strong>自定义模块加载机制与插件化补丁方案</strong>，实现多进程环境下的稳定集成与加载，整体推理性能较 <strong>Triton Server 提升约 70%</strong>。
+    <p><strong>作者：</strong>刘少坤（HPC &amp;&amp; AI Infer Intern）<br>
+    <strong>性质：</strong>推理内核优化 · NPU 推理框架适配<br>
+    <strong>工具：</strong>CUDA、Nsight Systems / Compute、NVFP4、FP8 KV Cache、vLLM、Ascend NPU、npu_gelu<br>
+    <strong>简介：</strong>基于 <strong>Nsight Systems / Nsight Compute</strong> 对量化模型推理链路进行 profiling，定位 MoE 与 KV Cache 处理的热点瓶颈。在 GPU 推理侧完成 <strong>NVFP4 内核适配</strong>，实现 <strong>SiLU + Mul</strong> 融合以减少中间张量访存，并在 MLA 架构下实现 <strong>FP8 KV Cache Cat + Quant 融合</strong>，降低 kernel launch 与 memory traffic，最终实现 <strong>推理延迟下降 2%</strong>、<strong>吞吐提升 4%</strong>。<br><br>
+    同时面向天文特征匹配场景，基于 <strong>vLLM</strong> 定制 <strong>TWen-GPT2</strong> 的 Ascend NPU 推理框架，将 <strong>NewGELU / FastGELU</strong> 替换为原生 <strong>npu_gelu</strong> 算子，并输出最后一层 <strong>hidden state</strong> 作为 embedding 用于特征检索。通过 <strong>插件化模块加载</strong> 支持多进程部署，整体推理性能较 <strong>Triton Server 提升约 70%</strong>。
     </p>
   </div>
 </div>
@@ -114,3 +114,5 @@
     <strong>简介：</strong>该系统基于<strong>CNN模型</strong>实现<strong>手势与身份图像识别</strong>，部署于<strong>K210边缘计算芯片</strong>，实现用户触发采样识别。使用<strong>ROS</strong>搭建<strong>六轴机械臂</strong>与<strong>移动底盘</strong>的控制架构，完成<strong>核酸拭子抓取、采样与消毒全过程</strong>，并结合<strong>Cartographer建图</strong>与<strong>AMCL定位</strong>完成<strong>全自主路径规划与语音播报</strong>。项目融合<strong>AI视觉感知</strong>与<strong>机器人运动控制</strong>，为智慧防疫提供智能解决方案。</p>
   </div>
 </div>
+
+
