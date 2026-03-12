@@ -12,6 +12,7 @@
     </p>
   </div>
 </div>
+
 ---
 <!-- 项目：量化模型算子融合与 Ascend NPU 推理框架优化 -->
 <div style="display: flex; align-items: center; gap: 24px; margin-bottom: 2rem;">
@@ -26,6 +27,7 @@
     </p>
   </div>
 </div>
+
 ---
 <div style="display: flex; align-items: center; gap: 24px; margin-bottom: 2rem;">
   <img src="static/assets/img/raft.png" alt="raftstereo_quant" style="width: 360px; height: auto; border-radius: 6px;">
